@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!--Object Schema Validation-->
+  <xs:include schemaLocation="OpicsPlusPresentationLayer.XSD" />
+  <!-- This schema file is used to validate the UI service message object -->
+  <xs:include schemaLocation="BCDTO.XSD" />
+  <xs:element name="OpicsPlusRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Message">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="dataCollection" type="DataCollectionType" />
+              <xs:element minOccurs="0" name="Errors" type="ErrorCollectionType" />
+              <xs:element minOccurs="0" name="Interuptions" type="UIInteruptionsType" />
+              <xs:element name="Screens">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:any minOccurs="0" maxOccurs="unbounded" namespace="##any" processContents="skip" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <!-- The data object holding the information between the UI and the           -->
+              <!-- business component is specified below.                                   -->
+              <!-- TODO: - Make sure that the following element name (BC) is the same     -->
+              <!--         as the value of the data object's SM_DTO_NAME constant member.   -->
+              <xs:element type="BCDTOType" name="BC" />
+            </xs:sequence>
+            <xs:attribute name="type" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Header" type="HeaderType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="BCDTOType">
+    <xs:sequence>
+      <!--TODO: Make sure the names are consistent here and in the data object's schema file. -->
+      <xs:element name="BCDTO" type="BCDTO" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file maps the transaction stream names that the UI component calls      -->
+<!-- to business object classes and specific functions that the business objects  -->
+<!-- should execute. It can also specify schema definition for the xml message    -->
+<!-- that is sent to the business component to make sure only valid messages      -->
+<!-- are processed by the business component.                                     -->
+<!--                                                                              -->
+<!-- TODO: - Check if the content of the file is correct.                         -->
+<!--       - Add the transaction streams to Opics Plus using the TRXS screen.     -->
+<TransactionStreams>
+  <!-- Transaction stream used by the UI: -->
+  <TransactionStream name="ACRMASTART" isBatchAware="false" notification="" schema="BCSchema.xsd">
+    <Components>
+      <Component name="ACRMASTART" functionCode="ASTART" type="Scotia.OpicsPlus.Application.ACRM.ACRMBC" assembly="Scotia.OpicsPlus.Application.ACRM.ACRMBC" />
+    </Components>
+  </TransactionStream>
+    <!-- Transaction stream used by BSYS/OSYS: -->
+  <TransactionStream name="ACRMEOD" isBatchAware="false" notification="" schema="EOD.xsd">
+    <Components>
+      <Component name="ACRMEOD" functionCode="EOD" type="Scotia.OpicsPlus.Application.ACRM.ACRMBC" assembly="Scotia.OpicsPlus.Application.ACRM.ACRMBC" />
+    </Components>
+  </TransactionStream>
+</TransactionStreams>

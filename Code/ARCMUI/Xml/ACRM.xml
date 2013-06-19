@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<screen>
+  <toolbars>
+    <toolbar name="ApplicationToolbar" caption="ApplicationToolbar" visible="true" style="TextOnlyAlways">      
+      <tools>
+        <tool name="ASTART" type="ButtonTool" visible="true" caption="&amp;Start" />
+        <tool name="BCLEAR" type="ButtonTool" visible="true" caption="&amp;Clear" />
+      </tools>
+    </toolbar>
+    <toolbar name="DropDownToolbar" caption="DropDownToolbar" visible="false" style="TextOnlyAlways">
+      <tools />
+    </toolbar>
+  </toolbars>
+<!-- TODO: Change caption below. -->
+    <templateTypes default="ACRM">
+    <templateType name="ACRM" caption="ACRM - BATCH SHELL" desktop="">
+      <templates favorite="ACRM">
+        <template name="ACRM" caption="ACRM - BATCH SHELL" fileName="ACRMTemplate.Xml" />
+      </templates>
+    </templateType>
+  </templateTypes>
+</screen>

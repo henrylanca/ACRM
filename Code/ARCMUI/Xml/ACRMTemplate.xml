@@ -1,0 +1,7 @@
+<screen lookups="Lookup.xml" app="ACRM">
+  <controls>
+    <control name="FULLLOAD" top="54" left="264" width="93" height="22" tabIndex="1" index="1" enabled="True" visible="True" lookup="" helpId="" defaultValue="" required="False" xmlTag="FULLLOAD" parent="" caption="Full Load?" literalPosition="lefttoright" type="checkbox" />
+    <control name="EXTRACTDATE" top="88" left="264" width="128" height="22" tabIndex="2" index="2" enabled="True" visible="True" lookup="QDTE" helpId="Extract date" defaultValue="" required="False" xmlTag="EXTRACTDATE" parent="" caption="Extract date :" literalPosition="lefttoright" type="textbox" datalength="15" wordwrap="False" />
+
+  </controls>
+</screen>

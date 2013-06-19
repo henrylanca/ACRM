@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!-- This schema definition reflects the structure of the data object. -->
+  <!-- TODO: Change the names of the fields below to reflect the fields in -->
+  <!--       the real data object. -->
+  <xs:element name="BCDTO" type="BCDTO" />
+  <xs:complexType name="BCDTO">
+    <xs:sequence>
+      <!-- TODO: Replace field names with the names of the XmlElementAttribute  -->
+      <!--      names specified in the data object's properties. -->
+      <xs:element name="BRANCH" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

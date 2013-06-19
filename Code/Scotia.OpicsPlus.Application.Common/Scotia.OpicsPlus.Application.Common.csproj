@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5CBF308A-06BB-482D-B39C-BDCAA2B3F411}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Scotia.OpicsPlus.Application.Common</RootNamespace>
+    <AssemblyName>Scotia.OpicsPlus.Application.Common</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Scotia.OpicsPlus.Application.Common.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Misys.OpicsPlus.Framework.Common.ApplicationLogging.Core, Version=3.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Program Files\Misys\Opics Plus Server V3.2\ApplicationService\Bin\Misys.OpicsPlus.Framework.Common.ApplicationLogging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Misys.OpicsPlus.Framework.Common.ApplicationLogging.DataObjects, Version=3.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Program Files\Misys\Opics Plus Server V3.2\ApplicationService\Bin\Misys.OpicsPlus.Framework.Common.ApplicationLogging.DataObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Misys.OpicsPlus.Framework.Common.ApplicationLogging.Interfaces, Version=3.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Program Files\Misys\Opics Plus Server V3.2\ApplicationService\Bin\Misys.OpicsPlus.Framework.Common.ApplicationLogging.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Misys.OpicsPlus.Framework.Common.Errors, Version=3.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Program Files\Misys\Opics Plus Server V3.2\ApplicationService\Bin\Misys.OpicsPlus.Framework.Common.Errors.dll</HintPath>
+    </Reference>
+    <Reference Include="Misys.OpicsPlus.Framework.Common.ServiceMessages, Version=3.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Program Files\Misys\Opics Plus Server V3.2\ApplicationService\Bin\Misys.OpicsPlus.Framework.Common.ServiceMessages.dll</HintPath>
+    </Reference>
+    <Reference Include="Misys.OpicsPlus.Framework.Common.SessionParameters, Version=3.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Program Files\Misys\Opics Plus Server V3.2\ApplicationService\Bin\Misys.OpicsPlus.Framework.Common.SessionParameters.dll</HintPath>
+    </Reference>
+    <Reference Include="Misys.OpicsPlus.Framework.DataAccessLayer.DataAccess, Version=3.2.2000.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Program Files\Misys\Opics Plus Server V3.2\ApplicationService\Bin\Misys.OpicsPlus.Framework.DataAccessLayer.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Misys.OpicsPlus.Framework.DataAccessLayer.DataAccessProxy, Version=3.2.2000.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Program Files\Misys\Opics Plus Server V3.2\ApplicationService\Bin\Misys.OpicsPlus.Framework.DataAccessLayer.DataAccessProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Misys.OpicsPlus.Framework.Reporting.ReportManager, Version=3.2.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Program Files\Misys\Opics Plus Server V3.2\ApplicationService\Bin\Misys.OpicsPlus.Framework.Reporting.ReportManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonLib.cs" />
+    <Compile Include="DataAccessHelper.cs" />
+    <Compile Include="FileHelper.cs" />
+    <Compile Include="LogHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SharedParameters.cs" />
+    <Compile Include="TraceHelper.cs" />
+    <Compile Include="XmlHelper.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

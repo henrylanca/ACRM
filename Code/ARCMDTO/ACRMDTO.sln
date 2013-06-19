@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACRMDTO", "ARCMDTO\ACRMDTO.csproj", "{42598C35-CEB9-492A-9DB5-E5455BE48B0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACRMUI", "..\ARCMUI\ACRMUI.csproj", "{64623FD4-20D4-43C2-AEC3-C573B67B5D64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACRMBC", "..\ARCMBC\ACRMBC.csproj", "{4FA9387F-9FB3-4CFA-860A-9ABBEEF73360}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42598C35-CEB9-492A-9DB5-E5455BE48B0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42598C35-CEB9-492A-9DB5-E5455BE48B0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42598C35-CEB9-492A-9DB5-E5455BE48B0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42598C35-CEB9-492A-9DB5-E5455BE48B0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64623FD4-20D4-43C2-AEC3-C573B67B5D64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64623FD4-20D4-43C2-AEC3-C573B67B5D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64623FD4-20D4-43C2-AEC3-C573B67B5D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64623FD4-20D4-43C2-AEC3-C573B67B5D64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FA9387F-9FB3-4CFA-860A-9ABBEEF73360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FA9387F-9FB3-4CFA-860A-9ABBEEF73360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FA9387F-9FB3-4CFA-860A-9ABBEEF73360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FA9387F-9FB3-4CFA-860A-9ABBEEF73360}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
