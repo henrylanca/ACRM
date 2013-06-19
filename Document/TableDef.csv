@@ -1,0 +1,593 @@
+WASADMIN.CUSTOMER,,,
+WASADMIN.UBTB_CUSTOMERCONTACT,,,
+WASADMIN.ADDRESS,,,
+WASADMIN.ADDRESSLINKS,,,
+WASADMIN.UBTB_CUSTOMERCONNECTIONDETAILS,,,
+WASADMIN.UBTB_PERSONEDUCATIONDETAILS,,,
+WASADMIN.UBTB_CUSTEXTERNALAPPREF,,,
+WASADMIN.PERSONDETAILS,,,
+WASADMIN.ORGDETAILS,,,
+WASADMIN.CUSTOMERDOCDTL,,,
+
+Name,Owner,Type,Created_datetime
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,-------------------------------,-----------------------
+CUSTOMER,BFUBADMIN,user table,40361.47833
+
+
+
+Column_name,Type,Computed,Length      Prec  Scale,Nullable,TrimTrailingBlanks,FixedLenNullInSource,Collation
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,-------------------------------,---- ----------- ----- -----,-----------------------------------,-----------------------------------,-----------------------------------,--------------------------------------------------------------------------------------------------------------------------------
+CUSTOMERCODE,nvarchar,no,50,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+CUSTOMERTYPE,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBCUSTOMERSUBTYPE,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+ALPHACODE,nvarchar,no,40,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+BRANCHSORTCODE,nvarchar,no,40,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+SHORTNAME,nvarchar,no,120,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBRELATIONSHIPMGRID,nvarchar,no,60,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+REPORTINGCURRENCY,nvarchar,no,6,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+PREFERREDLANGUAGE,nvarchar,no,20,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+CUSTSTMTPROFILEID,nvarchar,no,40,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBCREATEDTTM,datetime,no,8,yes,(n/a),(n/a),NULL
+STATEMENTCHANNEL,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+GROUPID,nvarchar,no,50,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBSTRATEGICGROUPING,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+BUSINESSUNIT,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+CUSTSEGMENTID,nvarchar,no,40,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+CUSTOMERCLASSIFICATION,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBREGULATORYDEF,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+CREDITGRADE,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+COUNTRYRISKRATING,nvarchar,no,20,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+CREDITRISKWEIGHT,nvarchar,no,20,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBCREDITGRADEEXPDDT,datetime,no,8,yes,(n/a),(n/a),NULL
+CUSTOMERSTATUS,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBBANKRELATIONSHIPSTATUS,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBWATCHLISTSTATUS,nvarchar,no,2,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBKYCSTATUS,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBKYCEXPIRYDT,datetime,no,8,yes,(n/a),(n/a),NULL
+BANKRUPTINDICATOR,nvarchar,no,2,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBAUTHSUPERVISORID,nvarchar,no,60,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBLASTAUTHDTTM,datetime,no,8,yes,(n/a),(n/a),NULL
+UBAUTHSTATUS,nvarchar,no,2,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+FEEWAIVERINDICATOR,nvarchar,no,2,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+BUNDLEPRICINGAPPLICABLE,nvarchar,no,2,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+CHARGEFUNDINGACCOUNTID,nvarchar,no,40,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBTAXPAYERIND,nvarchar,no,2,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+TAXNUMBER,nvarchar,no,40,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBWITHHOLDINGTAXIND,nvarchar,no,2,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBBLOCKEDINDICATOR,nvarchar,no,2,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBBLOCKEDREASON,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBCUSTSTATUSREASON,nvarchar,no,512,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBREJECTIONDT,datetime,no,8,yes,(n/a),(n/a),NULL
+VERSIONNUM,int,no,4           10    0,yes,(n/a),(n/a),NULL
+UBDLNSTATUS,nvarchar,no,40,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBISARCHIVE,nvarchar,no,2,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBISDELETE,nvarchar,no,2,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBDLNLOANSTATUS,nvarchar,no,40,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBDLNPRFATTACHDT,datetime,no,8,yes,(n/a),(n/a),NULL
+UBSTATUSCHANGEDT,datetime,no,8,yes,(n/a),(n/a),NULL
+UBTAXEXEMPTREASON,nvarchar,no,40,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+
+
+Identity,Seed                                    Increment                               Not For Replication,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------- --------------------------------------- -------------------,,,,,,
+No identity column defined.,NULL                                    NULL                                    NULL,,,,,,
+
+
+RowGuidCol,,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,,,,,,,
+No rowguidcol column defined.,,,,,,,
+
+
+Data_located_on_filegroup,,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,,,,,,,
+UB_DATA,,,,,,,
+
+
+index_name,index_description,,,index_keys,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,--------------------------------,-----------------------------,--------------------- -------------,------------------------------------,------------------------------------,---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+IDX_CUST_1,nonclustered located on UB_INDX,,,"CUSTOMERCODE,","BRANCHSORTCODE, SHORTNAME, CUSTSEGM","ENTID, BUSINESSUNIT, BUNDLEPRICINGAP","PLICABLE, FEEWAIVERINDICATOR, CUSTOMERTYPE, ALPHACODE"
+IDX_CUST_STMTPRFL,nonclustered located on UB_INDX,,,CUSTSTMTPROFI,LEID,,
+PK_CUSTOMER,"nonclustered, unique, primary key located on UB_INDX",,,CUSTOMERCODE,,,
+
+
+constraint_type,constraint_name,delete_action,update_action status_enabled,status_for_replication constraint_,keys,,
+--------------------------------------------------------------------------------------------------------------------------------,------------------ --------------------------------------------------------------------------------------------------------------,------------------ -------------,------------- --------------,---------------------- -----------,------------------------------------,------------------------------------,-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DEFAULT on column UBISARCHIVE,DEFAULT__N_1138,(n/a),(n/a)         (n/a),(n/a)                  ('N'),,,
+DEFAULT on column UBISDELETE,DEFAULT__N_1139,(n/a),(n/a)         (n/a),(n/a)                  ('N'),,,
+PRIMARY KEY (non-clustered),PK_CUSTOMER,(n/a),(n/a)         (n/a),(n/a)                  CUSTOMERCOD,E,,
+
+
+"No foreign keys reference table 'WASADMIN.CUSTOMER', or you do not have permissions on referencing tables.",,,,,,,
+No views with schema binding reference table 'WASADMIN.CUSTOMER'.,,,,,,,
+
+Name,Owner,Type,Created_datetime,,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,-------------------------------,-----------------------,,,,
+UBTB_CUSTOMERCONTACT,BFUBADMIN,user table,40361.47832,,,,
+
+
+
+Column_name,Type,Computed,Length      Prec  Scale,Nullable,TrimTrailingBlanks,FixedLenNullInSource,Collation
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,-------------------------------,---- ----------- ----- -----,-----------------------------------,-----------------------------------,-----------------------------------,--------------------------------------------------------------------------------------------------------------------------------
+UBCUSTCONTACTPK,nvarchar,no,40,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBCUSTOMERCODE,nvarchar,no,50,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBCONTACTMEDIUMTYPE,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBCONTACTMEDIUMDETAILS,nvarchar,no,200,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBISPREFERREDCONTACT,nvarchar,no,2,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBCONTACTLOCATION,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBAREACODE,nvarchar,no,20,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBCOUNTRYID,nvarchar,no,40,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBVALIDFROMDT,datetime,no,8,yes,(n/a),(n/a),NULL
+UBVALIDTODT,datetime,no,8,yes,(n/a),(n/a),NULL
+VERSIONNUM,int,no,4           10    0,yes,(n/a),(n/a),NULL
+UBCONTACTMEDIUMFOR,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBISARCHIVE,nvarchar,no,2,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBISDELETE,nvarchar,no,2,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+
+
+Identity,Seed                                    Increment                               Not For Replication,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------- --------------------------------------- -------------------,,,,,,
+No identity column defined.,NULL                                    NULL                                    NULL,,,,,,
+
+
+RowGuidCol,,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,,,,,,,
+No rowguidcol column defined.,,,,,,,
+
+
+Data_located_on_filegroup,,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,,,,,,,
+UB_DATA,,,,,,,
+
+
+index_name,index_description,,,index_keys,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,--------------------------------,-----------------------------,--------------------- -------------,------------------------------------,------------------------------------,---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+IDX_CSTCONT_CODETY,nonclustered located on UB_INDX,,,UBCONTACTMEDI,"UMFOR, UBCONTACTMEDIUMTYPE",,
+IDX_CUSTCON_CUSTCD,nonclustered located on UB_INDX,,,UBCUSTOMERCOD,E,,
+PK_CUSTOMERCNTC,"nonclustered, unique, primary key located on UB_INDX",,,UBCUSTCONTACT,PK,,
+
+
+constraint_type,constraint_name,delete_action,update_action status_enabled,status_for_replication constraint_,keys,,
+--------------------------------------------------------------------------------------------------------------------------------,------------------ --------------------------------------------------------------------------------------------------------------,------------------ -------------,------------- --------------,---------------------- -----------,------------------------------------,------------------------------------,-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DEFAULT on column UBISARCHIVE,DEFAULT__N_1068,(n/a),(n/a)         (n/a),(n/a)                  ('N'),,,
+DEFAULT on column UBISDELETE,DEFAULT__N_1069,(n/a),(n/a)         (n/a),(n/a)                  ('N'),,,
+PRIMARY KEY (non-clustered),PK_CUSTOMERCNTC,(n/a),(n/a)         (n/a),(n/a)                  UBCUSTCONTA,CTPK,,
+
+
+"No foreign keys reference table 'WASADMIN.UBTB_CUSTOMERCONTACT', or you do not have permissions on referencing tables.",,,,,,,
+No views with schema binding reference table 'WASADMIN.UBTB_CUSTOMERCONTACT'.,,,,,,,
+
+Name,Owner,Type,Created_datetime,,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,-------------------------------,-----------------------,,,,
+ADDRESS,BFUBADMIN,user table,40361.47832,,,,
+
+
+
+Column_name,Type,Computed,Length      Prec  Scale,Nullable,TrimTrailingBlanks,FixedLenNullInSource,Collation
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,-------------------------------,---- ----------- ----- -----,-----------------------------------,-----------------------------------,-----------------------------------,--------------------------------------------------------------------------------------------------------------------------------
+ADDRESSID,nvarchar,no,60,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+ADDRESSLINE1,nvarchar,no,510,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+ADDRESSLINE2,nvarchar,no,510,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+ADDRESSLINE3,nvarchar,no,510,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+ADDRESSLINE4,nvarchar,no,510,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+ADDRESSLINE5,nvarchar,no,510,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+ADDRESSLINE6,nvarchar,no,510,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+ADDRESSLINE7,nvarchar,no,510,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+POSTZIPCODE,nvarchar,no,30,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+DOCID,nvarchar,no,40,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBOCCUPANCYDT,datetime,no,8,yes,(n/a),(n/a),NULL
+UBPREMISESSTATUS,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+VERSIONNUM,int,no,4           10    0,yes,(n/a),(n/a),NULL
+UBISARCHIVE,nvarchar,no,2,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBISDELETE,nvarchar,no,2,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+
+
+Identity,Seed                                    Increment                               Not For Replication,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------- --------------------------------------- -------------------,,,,,,
+No identity column defined.,NULL                                    NULL                                    NULL,,,,,,
+
+
+RowGuidCol,,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,,,,,,,
+No rowguidcol column defined.,,,,,,,
+
+
+Data_located_on_filegroup,,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,,,,,,,
+UB_DATA,,,,,,,
+
+
+index_name,index_description,,,index_keys,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,--------------------------------,-----------------------------,--------------------- -------------,------------------------------------,------------------------------------,---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+IDX_ADDRESS_DOCID,nonclustered located on UB_INDX,,,DOCID,,,
+PK_ADDRESS,"nonclustered, unique, primary key located on UB_INDX",,,ADDRESSID,,,
+
+
+constraint_type,constraint_name,delete_action,update_action status_enabled,status_for_replication constraint_,keys,,
+--------------------------------------------------------------------------------------------------------------------------------,------------------ --------------------------------------------------------------------------------------------------------------,------------------ -------------,------------- --------------,---------------------- -----------,------------------------------------,------------------------------------,-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DEFAULT on column UBISARCHIVE,DEFAULT__N_1080,(n/a),(n/a)         (n/a),(n/a)                  ('N'),,,
+DEFAULT on column UBISDELETE,DEFAULT__N_1081,(n/a),(n/a)         (n/a),(n/a)                  ('N'),,,
+PRIMARY KEY (non-clustered),PK_ADDRESS,(n/a),(n/a)         (n/a),(n/a)                  ADDRESSID,,,
+
+
+"No foreign keys reference table 'WASADMIN.ADDRESS', or you do not have permissions on referencing tables.",,,,,,,
+No views with schema binding reference table 'WASADMIN.ADDRESS'.,,,,,,,
+Name,Owner,Type,Created_datetime,,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,-------------------------------,-----------------------,,,,
+ADDRESSLINKS,BFUBADMIN,user table,40361.47832,,,,
+
+
+
+Column_name,Type,Computed,Length      Prec  Scale,Nullable,TrimTrailingBlanks,FixedLenNullInSource,Collation
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,-------------------------------,---- ----------- ----- -----,-----------------------------------,-----------------------------------,-----------------------------------,--------------------------------------------------------------------------------------------------------------------------------
+ADDRESSLINKID,nvarchar,no,50,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+CUSTACC_KEY,nvarchar,no,50,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+ENTITYTYPE,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+ADDRESSID,nvarchar,no,60,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+ADDRESSTYPE,nvarchar,no,10,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+DEFAULTADDRINDICATOR,nvarchar,no,2,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+VERSIONNUM,int,no,4           10    0,yes,(n/a),(n/a),NULL
+UBISARCHIVE,nvarchar,no,2,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBISDELETE,nvarchar,no,2,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+
+
+Identity,Seed                                    Increment                               Not For Replication,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------- --------------------------------------- -------------------,,,,,,
+No identity column defined.,NULL                                    NULL                                    NULL,,,,,,
+
+
+RowGuidCol,,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,,,,,,,
+No rowguidcol column defined.,,,,,,,
+
+
+Data_located_on_filegroup,,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,,,,,,,
+UB_DATA,,,,,,,
+
+
+index_name,index_description,,,index_keys,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,--------------------------------,-----------------------------,--------------------- -------------,------------------------------------,------------------------------------,---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+IDX_ADRSLNK_ADRSID,nonclustered located on UB_INDX,,,ADDRESSID,,,
+IDX_ADRSLNK_CUSTID,nonclustered located on UB_INDX,,,CUSTACC_KEY,,,
+PK_ADDRESSLINKS,"nonclustered, unique, primary key located on UB_INDX",,,ADDRESSLINKID,,,
+
+
+constraint_type,constraint_name,delete_action,update_action status_enabled,status_for_replication constraint_,keys,,
+--------------------------------------------------------------------------------------------------------------------------------,------------------ --------------------------------------------------------------------------------------------------------------,------------------ -------------,------------- --------------,---------------------- -----------,------------------------------------,------------------------------------,-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DEFAULT on column UBISARCHIVE,DEFAULT__N_1078,(n/a),(n/a)         (n/a),(n/a)                  ('N'),,,
+DEFAULT on column UBISDELETE,DEFAULT__N_1079,(n/a),(n/a)         (n/a),(n/a)                  ('N'),,,
+PRIMARY KEY (non-clustered),PK_ADDRESSLINKS,(n/a),(n/a)         (n/a),(n/a)                  ADDRESSLINK,ID,,
+
+
+"No foreign keys reference table 'WASADMIN.ADDRESSLINKS', or you do not have permissions on referencing tables.",,,,,,,
+No views with schema binding reference table 'WASADMIN.ADDRESSLINKS'.,,,,,,,
+Name,Owner,Type,Created_datetime,,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,-------------------------------,-----------------------,,,,
+UBTB_CUSTOMERCONNECTIONDETAILS,BFUBADMIN,user table,40361.47832,,,,
+
+
+
+Column_name,Type,Computed,Length      Prec  Scale,Nullable,TrimTrailingBlanks,FixedLenNullInSource,Collation
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,-------------------------------,---- ----------- ----- -----,-----------------------------------,-----------------------------------,-----------------------------------,--------------------------------------------------------------------------------------------------------------------------------
+UBCUSTCONNECTIONIDPK,nvarchar,no,40,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBCUSTCONNECTIONNAME,nvarchar,no,200,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBCUSTCONNECTIONTYPE,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBCUSTCONNECTIONSUBTYPE,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBCUSTCONNECTIONDESC,nvarchar,no,512,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBREFCUSTOMERCODE,nvarchar,no,50,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBADDRESSID,nvarchar,no,60,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+VERSIONNUM,int,no,4           10    0,yes,(n/a),(n/a),NULL
+UBISARCHIVE,nvarchar,no,2,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBISDELETE,nvarchar,no,2,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+
+
+Identity,Seed                                    Increment                               Not For Replication,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------- --------------------------------------- -------------------,,,,,,
+No identity column defined.,NULL                                    NULL                                    NULL,,,,,,
+
+
+RowGuidCol,,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,,,,,,,
+No rowguidcol column defined.,,,,,,,
+
+
+Data_located_on_filegroup,,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,,,,,,,
+UB_DATA,,,,,,,
+
+
+index_name,index_description,,,index_keys,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,--------------------------------,-----------------------------,--------------------- -------------,------------------------------------,------------------------------------,---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+IDX_CUSTCON_ADDID,nonclustered located on UB_INDX,,,UBADDRESSID,,,
+IDX_CUSTCON_REFCST,nonclustered located on UB_INDX,,,UBREFCUSTOMER,CODE,,
+PK_UBTBCUSTCONNDTL,"nonclustered, unique, primary key located on UB_INDX",,,UBCUSTCONNECT,IONIDPK,,
+
+
+constraint_type,constraint_name,delete_action,update_action status_enabled,status_for_replication constraint_,keys,,
+--------------------------------------------------------------------------------------------------------------------------------,------------------ --------------------------------------------------------------------------------------------------------------,------------------ -------------,------------- --------------,---------------------- -----------,------------------------------------,------------------------------------,-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DEFAULT on column UBISARCHIVE,DEFAULT__N_1076,(n/a),(n/a)         (n/a),(n/a)                  ('N'),,,
+DEFAULT on column UBISDELETE,DEFAULT__N_1077,(n/a),(n/a)         (n/a),(n/a)                  ('N'),,,
+PRIMARY KEY (non-clustered),PK_UBTBCUSTCONNDTL,(n/a),(n/a)         (n/a),(n/a)                  UBCUSTCONNE,CTIONIDPK,,
+
+
+"No foreign keys reference table 'WASADMIN.UBTB_CUSTOMERCONNECTIONDETAILS', or you do not have permissions on referencing tables.",,,,,,,
+No views with schema binding reference table 'WASADMIN.UBTB_CUSTOMERCONNECTIONDETAILS'.,,,,,,,
+
+Name,Owner,Type,Created_datetime,,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,-------------------------------,-----------------------,,,,
+UBTB_PERSONEDUCATIONDETAILS,BFUBADMIN,user table,40361.47832,,,,
+
+
+
+Column_name,Type,Computed,Length      Prec  Scale,Nullable,TrimTrailingBlanks,FixedLenNullInSource,Collation
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,-------------------------------,---- ----------- ----- -----,-----------------------------------,-----------------------------------,-----------------------------------,--------------------------------------------------------------------------------------------------------------------------------
+UBSTUDENTEDUPK,nvarchar,no,40,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBCUSTOMERCODE,nvarchar,no,50,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBCUSTCONNECTIONID,nvarchar,no,40,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBCOURSETYPE,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBCOURSEYEAR,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBCOURSEDESC,nvarchar,no,512,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBGRADUATIONDT,datetime,no,8,yes,(n/a),(n/a),NULL
+VERSIONNUM,int,no,4           10    0,yes,(n/a),(n/a),NULL
+UBISARCHIVE,nvarchar,no,2,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBISDELETE,nvarchar,no,2,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+
+
+Identity,Seed                                    Increment                               Not For Replication,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------- --------------------------------------- -------------------,,,,,,
+No identity column defined.,NULL                                    NULL                                    NULL,,,,,,
+
+
+RowGuidCol,,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,,,,,,,
+No rowguidcol column defined.,,,,,,,
+
+
+Data_located_on_filegroup,,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,,,,,,,
+UB_DATA,,,,,,,
+
+
+index_name,index_description,,,index_keys,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,--------------------------------,-----------------------------,--------------------- -------------,------------------------------------,------------------------------------,---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+IDX_PRSNEDUDTL_CST,nonclustered located on UB_INDX,,,UBCUSTOMERCOD,"E, UBCUSTCONNECTIONID",,
+PK_PRSNEDUDTL,"nonclustered, unique, primary key located on UB_INDX",,,UBSTUDENTEDUP,K,,
+
+
+constraint_type,constraint_name,delete_action,update_action status_enabled,status_for_replication constraint_,keys,,
+--------------------------------------------------------------------------------------------------------------------------------,------------------ --------------------------------------------------------------------------------------------------------------,------------------ -------------,------------- --------------,---------------------- -----------,------------------------------------,------------------------------------,-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DEFAULT on column UBISARCHIVE,DEFAULT__N_1072,(n/a),(n/a)         (n/a),(n/a)                  ('N'),,,
+DEFAULT on column UBISDELETE,DEFAULT__N_1073,(n/a),(n/a)         (n/a),(n/a)                  ('N'),,,
+PRIMARY KEY (non-clustered),PK_PRSNEDUDTL,(n/a),(n/a)         (n/a),(n/a)                  UBSTUDENTED,UPK,,
+
+
+"No foreign keys reference table 'WASADMIN.UBTB_PERSONEDUCATIONDETAILS', or you do not have permissions on referencing tables.",,,,,,,
+No views with schema binding reference table 'WASADMIN.UBTB_PERSONEDUCATIONDETAILS'.,,,,,,,
+
+Name,Owner,Type,Created_datetime,,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,-------------------------------,-----------------------,,,,
+UBTB_CUSTEXTERNALAPPREF,BFUBADMIN,user table,40361.47832,,,,
+
+
+
+Column_name,Type,Computed,Length      Prec  Scale,Nullable,TrimTrailingBlanks,FixedLenNullInSource,Collation
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,-------------------------------,---- ----------- ----- -----,-----------------------------------,-----------------------------------,-----------------------------------,--------------------------------------------------------------------------------------------------------------------------------
+UBCUSTEXTAPPREFPK,nvarchar,no,40,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+CUSTOMERCODE,nvarchar,no,50,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBEXTERNALREFERENCENUM,nvarchar,no,40,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBEXTERNALAPPNAME,nvarchar,no,40,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+VERSIONNUM,int,no,4           10    0,yes,(n/a),(n/a),NULL
+UBISACTIVE,nvarchar,no,2,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBISARCHIVE,nvarchar,no,2,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBISDELETE,nvarchar,no,2,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+
+
+Identity,Seed                                    Increment                               Not For Replication,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------- --------------------------------------- -------------------,,,
+No identity column defined.,NULL                                    NULL                                    NULL,,,
+
+
+RowGuidCol,,,,
+--------------------------------------------------------------------------------------------------------------------------------,,,,
+No rowguidcol column defined.,,,,
+
+
+Data_located_on_filegroup,,,,
+--------------------------------------------------------------------------------------------------------------------------------,,,,
+UB_DATA,,,,
+
+
+index_name,index_description,,,index_keys
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,--------------------------------,-----------------------------,--------------------- -------------,------------------------------------,------------------------------------,---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+IDX_CUSTEXTREF_CUS,nonclustered located on UB_INDX,,,CUSTOMERCODE,,,
+PK_CUSTEXTAPPREF,"nonclustered, unique, primary key located on UB_INDX",,,UBCUSTEXTAPPR,EFPK,,
+
+
+constraint_type,constraint_name,delete_action,update_action status_enabled,status_for_replication constraint_,keys,,
+--------------------------------------------------------------------------------------------------------------------------------,------------------ --------------------------------------------------------------------------------------------------------------,------------------ -------------,------------- --------------,---------------------- -----------,------------------------------------,------------------------------------,-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DEFAULT on column UBISARCHIVE,DEFAULT__N_1052,(n/a),(n/a)         (n/a),(n/a)                  ('N'),,,
+DEFAULT on column UBISDELETE,DEFAULT__N_1053,(n/a),(n/a)         (n/a),(n/a)                  ('N'),,,
+PRIMARY KEY (non-clustered),PK_CUSTEXTAPPREF,(n/a),(n/a)         (n/a),(n/a)                  UBCUSTEXTAP,PREFPK,,
+
+
+"No foreign keys reference table 'WASADMIN.UBTB_CUSTEXTERNALAPPREF', or you do not have permissions on referencing tables.",,,,,,,
+No views with schema binding reference table 'WASADMIN.UBTB_CUSTEXTERNALAPPREF'.,,,,,,,
+
+Name,Owner,Type,Created_datetime,,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,-------------------------------,-----------------------,,,,
+PERSONDETAILS,BFUBADMIN,user table,40361.47833,,,,
+
+
+
+Column_name,Type,Computed,Length      Prec  Scale,Nullable,TrimTrailingBlanks,FixedLenNullInSource,Collation
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,-------------------------------,---- ----------- ----- -----,-----------------------------------,-----------------------------------,-----------------------------------,--------------------------------------------------------------------------------------------------------------------------------
+CUSTOMERCODE,nvarchar,no,50,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+FORENAME,nvarchar,no,60,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+MIDDLENAME,nvarchar,no,100,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+SURNAME,nvarchar,no,60,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBMOTHERMAIDENNAME,nvarchar,no,100,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+FATHERNAME,nvarchar,no,60,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBNAMEATBIRTH,nvarchar,no,100,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+TITLE,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+SEX,nvarchar,no,12,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+NATIONALITY,nvarchar,no,40,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+COUNTRYOFRESIDENCE,nvarchar,no,40,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+COUNTRYOFDOMICILE,nvarchar,no,40,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBCITIZENSHIP,nvarchar,no,40,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+DATEOFBIRTH,datetime,no,8,yes,(n/a),(n/a),NULL
+NOOFDEPENDENTS,smallint,no,2           5     0,yes,(n/a),(n/a),NULL
+EDUCATIONACHIEVED,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBCIVILSTATUS,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBRESIDENCYSTATUS,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBPLACEOFBIRTH,nvarchar,no,100,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+VERSIONNUM,int,no,4           10    0,yes,(n/a),(n/a),NULL
+UBISARCHIVE,nvarchar,no,2,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBISDELETE,nvarchar,no,2,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBCOUNTRYOFBIRTH,nvarchar,no,6,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+
+
+Identity,Seed                                    Increment                               Not For Replication,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------- --------------------------------------- -------------------,,,
+No identity column defined.,NULL                                    NULL                                    NULL,,,
+
+
+RowGuidCol,,,,
+--------------------------------------------------------------------------------------------------------------------------------,,,,
+No rowguidcol column defined.,,,,
+
+
+Data_located_on_filegroup,,,,
+--------------------------------------------------------------------------------------------------------------------------------,,,,
+UB_DATA,,,,
+
+
+index_name,index_description,,,index_keys
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,--------------------------------,-----------------------------,--------------------- -------------,------------------------------------,------------------------------------,---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+IDX_PERSONDTL_NM,nonclustered located on UB_INDX,,,"SURNAME, FORE",NAME,,
+PK_PERSONDETAILS,"nonclustered, unique, primary key located on UB_INDX",,,CUSTOMERCODE,,,
+
+
+constraint_type,constraint_name,delete_action,update_action status_enabled,status_for_replication constraint_,keys,,
+--------------------------------------------------------------------------------------------------------------------------------,------------------ --------------------------------------------------------------------------------------------------------------,------------------ -------------,------------- --------------,---------------------- -----------,------------------------------------,------------------------------------,-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DEFAULT on column UBISARCHIVE,DEFAULT__N_1136,(n/a),(n/a)         (n/a),(n/a)                  ('N'),,,
+DEFAULT on column UBISDELETE,DEFAULT__N_1137,(n/a),(n/a)         (n/a),(n/a)                  ('N'),,,
+PRIMARY KEY (non-clustered),PK_PERSONDETAILS,(n/a),(n/a)         (n/a),(n/a)                  CUSTOMERCOD,E,,
+
+
+"No foreign keys reference table 'WASADMIN.PERSONDETAILS', or you do not have permissions on referencing tables.",,,,,,,
+No views with schema binding reference table 'WASADMIN.PERSONDETAILS'.,,,,,,,
+
+Name,Owner,Type,Created_datetime,,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,-------------------------------,-----------------------,,,,
+ORGDETAILS,BFUBADMIN,user table,40361.47833,,,,
+
+
+
+Column_name,Type,Computed,Length      Prec  Scale,Nullable,TrimTrailingBlanks,FixedLenNullInSource,Collation
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,-------------------------------,---- ----------- ----- -----,-----------------------------------,-----------------------------------,-----------------------------------,--------------------------------------------------------------------------------------------------------------------------------
+CUSTOMERCODE,nvarchar,no,50,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+ORGNAME,nvarchar,no,200,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+COUNTRYOFINCORPORATION,nvarchar,no,40,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+ORGANISATIONREGISTRATION,nvarchar,no,40,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBINCORPORATIONDT,datetime,no,8,yes,(n/a),(n/a),NULL
+ESTABLISHEDDATE,datetime,no,8,yes,(n/a),(n/a),NULL
+NOOFEMPLOYEES,int,no,4           10    0,yes,(n/a),(n/a),NULL
+LASTAUDITDATE,datetime,no,8,yes,(n/a),(n/a),NULL
+UBTAXDOMICILE,nvarchar,no,40,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBBUSINESSCOMMMENCEMENTDT,datetime,no,8,yes,(n/a),(n/a),NULL
+UBNOOFPRINCIPLESHAREHOLDERS,int,no,4           10    0,yes,(n/a),(n/a),NULL
+UBISSUBSIDIARYORPARENT,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+ANNUALTURNOVER,decimal,no,13          24    6,yes,(n/a),(n/a),NULL
+UBPRIMARYBUSINESSACTIVITY,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+TURNOVERCATEGORY,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+VERSIONNUM,int,no,4           10    0,yes,(n/a),(n/a),NULL
+
+
+Identity,Seed                                    Increment                               Not For Replication,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------- --------------------------------------- -------------------,,,,,,
+No identity column defined.,NULL                                    NULL                                    NULL,,,,,,
+
+
+RowGuidCol,,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,,,,,,,
+No rowguidcol column defined.,,,,,,,
+
+
+Data_located_on_filegroup,,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,,,,,,,
+UB_DATA,,,,,,,
+
+
+index_name,index_description,,,index_keys,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,--------------------------------,-----------------------------,--------------------- -------------,------------------------------------,------------------------------------,---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+IDX_ORGDTL_ORGNM,nonclustered located on UB_INDX,,,ORGNAME,,,
+PK_ORGDETAILS,"nonclustered, unique, primary key located on UB_INDX",,,CUSTOMERCODE,,,
+
+
+constraint_type,constraint_name,delete_action,update_action status_enabled,status_for_replication constraint_,keys,,
+--------------------------------------------------------------------------------------------------------------------------------,------------------ --------------------------------------------------------------------------------------------------------------,------------------ -------------,------------- --------------,---------------------- -----------,------------------------------------,------------------------------------,-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PRIMARY KEY (non-clustered),PK_ORGDETAILS,(n/a),(n/a)         (n/a),(n/a)                  CUSTOMERCOD,E,,
+
+
+"No foreign keys reference table 'WASADMIN.ORGDETAILS', or you do not have permissions on referencing tables.",,,,,,,
+No views with schema binding reference table 'WASADMIN.ORGDETAILS'.,,,,,,,
+
+Name,Owner,Type,Created_datetime,,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,-------------------------------,-----------------------,,,,
+CUSTOMERDOCDTL,BFUBADMIN,user table,40361.47832,,,,
+
+
+
+Column_name,Type,Computed,Length      Prec  Scale,Nullable,TrimTrailingBlanks,FixedLenNullInSource,Collation
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,-------------------------------,---- ----------- ----- -----,-----------------------------------,-----------------------------------,-----------------------------------,--------------------------------------------------------------------------------------------------------------------------------
+DOCID,nvarchar,no,40,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+CUSTOMERCODE,nvarchar,no,50,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+DOCTYPE,nvarchar,no,60,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBACTUALDOCTYPE,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+ISSUEDDATE,datetime,no,8,yes,(n/a),(n/a),NULL
+UBPLACEISSUEREG,nvarchar,no,200,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBDOCUNIQUEREF,nvarchar,no,100,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBTRADINGREGNUM,nvarchar,no,60,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBVALIDFROMDT,datetime,no,8,yes,(n/a),(n/a),NULL
+UBVALIDTODT,datetime,no,8,yes,(n/a),(n/a),NULL
+UBISSUEREGAUTHORITY,nvarchar,no,100,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBISSUINGCOUNTRYCODE,nvarchar,no,40,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+DOCPURPOSE,nvarchar,no,512,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBDOCSCANNEDORCOPIED,nvarchar,no,10,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBISPROOFVERIFIED,nvarchar,no,2,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBFILELOCATION,nvarchar,no,512,yes,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+VERSIONNUM,int,no,4           10    0,yes,(n/a),(n/a),NULL
+UBISARCHIVE,nvarchar,no,2,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+UBISDELETE,nvarchar,no,2,no,(n/a),(n/a),SQL_Latin1_General_CP1_CS_AS
+
+
+Identity,Seed                                    Increment                               Not For Replication,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------- --------------------------------------- -------------------,,,,,,
+No identity column defined.,NULL                                    NULL                                    NULL,,,,,,
+
+
+RowGuidCol,,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,,,,,,,
+No rowguidcol column defined.,,,,,,,
+
+
+Data_located_on_filegroup,,,,,,,
+--------------------------------------------------------------------------------------------------------------------------------,,,,,,,
+UB_DATA,,,,,,,
+
+
+index_name,index_description,,,index_keys,,,
+--------------------------------------------------------------------------------------------------------------------------------,--------------------------------------------------------------------------------------------------------------------------------,--------------------------------,-----------------------------,--------------------- -------------,------------------------------------,------------------------------------,---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+IDX_CSTDOCDTL_CUS,nonclustered located on UB_INDX,,,CUSTOMERCODE,,,
+PK_CUSTOMERDOCDTL,"nonclustered, unique, primary key located on UB_INDX",,,DOCID,,,
+
+
+constraint_type,constraint_name,delete_action,update_action status_enabled,status_for_replication constraint_,keys,,
+--------------------------------------------------------------------------------------------------------------------------------,------------------ --------------------------------------------------------------------------------------------------------------,------------------ -------------,------------- --------------,---------------------- -----------,------------------------------------,------------------------------------,-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DEFAULT on column UBISARCHIVE,DEFAULT__N_1082,(n/a),(n/a)         (n/a),(n/a)                  ('N'),,,
+DEFAULT on column UBISDELETE,DEFAULT__N_1083,(n/a),(n/a)         (n/a),(n/a)                  ('N'),,,
+PRIMARY KEY (non-clustered),PK_CUSTOMERDOCDTL,(n/a),(n/a)         (n/a),(n/a)                  DOCID,,,
+
+
+"No foreign keys reference table 'WASADMIN.CUSTOMERDOCDTL', or you do not have permissions on referencing tables.",,,,,,,
+No views with schema binding reference table 'WASADMIN.CUSTOMERDOCDTL'.
