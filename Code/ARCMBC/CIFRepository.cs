@@ -125,7 +125,7 @@ Values(@RecordID, @LocalCountryCode, @TransitNo, @CustomerType, @CIFKey,
             cif.RecordID = RecordType.Detail;
             cif.LocalCountryCode = Convert.ToString(dr["LocalCountryCode"]);
             cif.TransitNo = dr["TransitNo"]==DBNull.Value ? default(int?) : Convert.ToInt32(dr["TransitNo"]);
-            cif.CustomerTitle = Convert.ToString(dr["CustomerType"]);
+            cif.CustomerType = Convert.ToString(dr["CustomerType"]);
             cif.CIFKey = Convert.ToString(dr["CIFKey"]);
             cif.LastName = Convert.ToString(dr["Lastname"]);
             cif.SecondLastName = Convert.ToString(dr["SecondLastName"]);
@@ -149,7 +149,13 @@ Values(@RecordID, @LocalCountryCode, @TransitNo, @CustomerType, @CIFKey,
             cif.OccupationDescription = Convert.ToString(dr["OccupationDesc"]);
             cif.Employer = Convert.ToString(dr["Employer"]);
             cif.WorkPhone = dr["WorkPhone"] == DBNull.Value ? default(long?) : Convert.ToInt64(dr["WorkPhone"]);
-            cif.HomePhone = dr["HomePhone"] == DBNull.Value ? default(long?) : Convert.ToInt64(dr["HomePhone"]);
+            if (string.Compare(cif.CustomerType, "INDIVIDUAL", true) == 0)
+                cif.HomePhone = dr["HomePhone"] == DBNull.Value ? default(long?) : Convert.ToInt64(dr["HomePhone"]);
+            else
+            {
+                if(cif.WorkPhone.HasValue==false)
+                    cif.WorkPhone = dr["HomePhone"] == DBNull.Value ? default(long?) : Convert.ToInt64(dr["HomePhone"]);
+            }
             cif.Email = Convert.ToString(dr["Email"]);
             cif.NameofSpouse = Convert.ToString(dr["NameOfSpouse"]);
             cif.SpouseTaxId = Convert.ToString(dr["SpousalTaxID"]);
@@ -184,6 +190,7 @@ Values(@RecordID, @LocalCountryCode, @TransitNo, @CustomerType, @CIFKey,
             cif.AptUnitFloor = Convert.ToString(dr["AptUnitFloor"]);
             cif.ExtracDate = Convert.ToDateTime(dr["ExtractDate"]);
             cif.RecordStatus = CIFEntity.ConvertBacktoRecordStatus(Convert.ToString(dr["RecordStatus"]));
+            cif.Count = default(long?);
             cif.DatabaseID = Convert.ToString(dr["DataBaseID"]);
 
             return cif;

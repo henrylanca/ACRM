@@ -373,7 +373,7 @@ namespace Scotia.OpicsPlus.Application.ACRM
                     cif.KeyContactpersonPhoneNo, cif.PrincipalOwner, cif.SigningAuthority, cif.NoOfFullTimeEmployees,
                     cif.NumberOfPartTimeEmployees, cif.AnnualSalesExpectedSource, cif.AnnualSalesExpectedAmount,
                     cif.SupplierName1, cif.SupplierName2, cif.AptUnitFloor, cif.CIFKey, cif.ExtracDate,
-                    cif.RecordStatus, cif.JobName, cif.ExtracDate, cif.Count, cif.DatabaseID));
+                    CIFEntity.ConvertRecordStatus(cif.RecordStatus), cif.JobName, cif.ExtracDate, cif.Count, cif.DatabaseID));
                 }
 
                 recordiD="T";
@@ -392,7 +392,7 @@ namespace Scotia.OpicsPlus.Application.ACRM
                     null, null, null, null,
                     null, null, null,
                     null, null, null, null, null,
-                    null, null, DateTime.Now, cifEntities.Count, 1));
+                    null, "ACRM", DateTime.Now, cifEntities.Count, 1));
                  sw.Close();
             }
         }

@@ -148,7 +148,7 @@ namespace Scotia.OpicsPlus.Application.ACRM
 
         public DateTime ExtracDate { get; set; }
 
-        public long Count { get; set; }
+        public long? Count { get; set; }
 
         public string DatabaseID { get; set; }
 
