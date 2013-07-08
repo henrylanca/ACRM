@@ -331,7 +331,7 @@ namespace Scotia.OpicsPlus.Application.ACRM
             paras[1] = dto.IsFullload ? "1" : "0";
             paras[2] = this._isEOD ? "true" : "false";
 
-            DataSet ds = DataAccessHelper.CallStoredProcedure(null, "dbo.usp_ExtractCIFs", paras);
+            DataSet ds = DataAccessHelper.CallStoredProcedure(null, "scotia.usp_ExtractCIFs", paras);
 
             List<CIFEntity> cifEntities = new List<CIFEntity>();
             foreach (DataRow dr in ds.Tables[0].Rows)
@@ -343,8 +343,19 @@ namespace Scotia.OpicsPlus.Application.ACRM
             if (dto.IsFullload)
                 fileType = "M";
 
-            CreateExtractionFile(cifEntities, 
-                string.Format(@"c:\temp\JM2FPP001{0}{1:yyMMdd}",fileType,DateTime.Today));
+            string extractFolder = "";
+            string[] configParas = new string[3];
+            configParas[0] = "02";
+            configParas[1] = "ACRM";
+            configParas[2] = "EXTRACTPATH";
+            DataSet dsConfig = DataAccessHelper.CallStoredProcedure(null, "scotia.usp_SCOTIA_CONFIG_GET", configParas);
+            foreach(DataRow dr in dsConfig.Tables[0].Rows)
+            {
+                extractFolder = Convert.ToString(dr["Value"]);
+            }
+
+            CreateExtractionFile(cifEntities,
+                string.Format(@"{0}JM2FPP001{1}{2:yyMMdd}", extractFolder, fileType, DateTime.Today));
 
             SessionParameters.Result.ErrorNumber = 0;
         }
