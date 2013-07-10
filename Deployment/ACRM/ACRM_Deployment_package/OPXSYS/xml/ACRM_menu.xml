@@ -1,0 +1,14 @@
+<!-- The system's OPXSYS\xml directory contains the menu.xml file.                                            -->
+<!-- This xml file describes the Opics Plus menu: the screen names with their short descriptions              -->
+<!-- grouped by their main functionalities.                                                                   -->
+<!--                                                                                                          -->
+<!-- TODO: - Check if the data in the xml line below is correct and change it if necessary.                   -->
+<!--       - Change the number in the beginning of the line (9999) so it will be unique in the menu.xml file. -->
+<!--       - Copy and paste the line into the OPXSYS\xml\menu.xml file to the appropriate section.            -->
+<!--                                                                                                          -->
+<!-- 9999    : unique number in menu.xml. Use the next available number.                                      -->
+<!-- task    : Screen name in OpicsPlus. It needs to be the same name as in the SecondaryWindows.config file. -->
+<!-- taskRef : leave empty (not used on Static screens)                                                       -->
+<!-- caption : caption to be displayed on the menu (short description)                                        -->
+
+<G9999 task="ACRM" taskRef="ACRM" caption="ACRM Extraction" />

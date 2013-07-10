@@ -11,4 +11,4 @@
 <!-- taskRef : leave empty (not used on Static screens)                                                       -->
 <!-- caption : caption to be displayed on the menu (short description)                                        -->
 
-<G9999 task="UI" taskRef="" caption="Default Static Batch Screen" />
+<G9999 task="ACRM" taskRef="ACRM" caption="ACRM Extraction" />
