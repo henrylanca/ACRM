@@ -1,6 +1,10 @@
-if OBJECT_ID('scotia.usp_ExtractCIFs') is not null drop proc scotia.usp_ExtractCIFs
-go
-
+USE [OP_DEV2]
+GO
+/****** Object:  StoredProcedure [scotia].[usp_ExtractCIFs]    Script Date: 10/15/2013 13:35:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
 -- =============================================
 -- Author:		Henry Lan
 -- Create date:	May 13, 2013
@@ -58,7 +62,7 @@ BEGIN
 	   KeyContactPerson, KeyContactPersonPhone, PrincipleOwner, SignatureAuthroity, NoOfFullTime,
 	   NoOfPartTime, AnnualSalesExpectedSource,AnnualSalesExpectedAmount, SupplierOne,
 	   SupplierTwo, AptUnitFloor, RecordStatus, DataBaseID, ExtractFlag) 
-	   select 
+	   select distinct
 	   A.CUSTOMERCODE as CIFKey,
 	   @ExtractDate AS ExtractDate,
 	   'D' AS RecordID,
@@ -138,9 +142,11 @@ BEGIN
 	   LEFT JOIN bfub.CUSTOMERDOCDTL H ON H.CUSTOMERCODE=A.CUSTOMERCODE AND H.DOCTYPE='Legal'
 	   LEFT JOIN bfub.SCOTIA_CORPORATEINFO I ON I.SCCUSTNO=A.CUSTOMERCODE
 	   JOIN CUST Z on A.CUSTOMERCODE collate SQL_Latin1_General_CP1_CS_AS =Z.CNO collate SQL_Latin1_General_CP1_CS_AS			   
+	   JOIN PBAD Y ON Y.Customer=Z.CNO and Y.BR='02'
 	   WHERE A.CUSTOMERTYPE in ('1062','1063')
 	   AND A.BRANCHSORTCODE='00000002'
-	   AND scotia.svfCheckUserBalance(A.CUSTOMERCODE)>0 	   
+	   AND (scotia.svfCheckUserBalance(A.CUSTOMERCODE)>0 	   
+	   or scotia.svfCheckUserBalance(Y.ACCNO)>0)
 	   
 	   DELETE FROM scotia.ACRM WHERE ExtractFlag='F'
 	   
@@ -183,7 +189,7 @@ BEGIN
 	   KeyContactPerson, KeyContactPersonPhone, PrincipleOwner, SignatureAuthroity, NoOfFullTime,
 	   NoOfPartTime, AnnualSalesExpectedSource,AnnualSalesExpectedAmount, SupplierOne,
 	   SupplierTwo, AptUnitFloor, RecordStatus, DataBaseID, ExtractFlag) 
-	   select 
+	   select distinct
 	   A.CUSTOMERCODE as CIFKey,
 	   @ExtractDate AS ExtractDate,
 	   'D' AS RecordID,
@@ -263,9 +269,11 @@ BEGIN
 	   LEFT JOIN bfub.CUSTOMERDOCDTL H ON H.CUSTOMERCODE=A.CUSTOMERCODE AND H.DOCTYPE='Legal'
 	   LEFT JOIN bfub.SCOTIA_CORPORATEINFO I ON I.SCCUSTNO=A.CUSTOMERCODE
 	   JOIN CUST Z on A.CUSTOMERCODE collate SQL_Latin1_General_CP1_CS_AS =Z.CNO collate SQL_Latin1_General_CP1_CS_AS			   
+	   JOIN PBAD Y ON Y.Customer=Z.CNO and Y.BR='02'
 	   WHERE A.CUSTOMERTYPE in ('1062','1063')
 	   AND A.BRANCHSORTCODE='00000002'
-	   AND scotia.svfCheckUserBalance(A.CUSTOMERCODE)>0 
+	   AND (scotia.svfCheckUserBalance(A.CUSTOMERCODE)>0 
+	   or scotia.svfCheckUserBalance(Y.ACCNO)>0)
 	   
 	   --Remove today's deplicated delta records
 	   DELETE FROM ACRM
